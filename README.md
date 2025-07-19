@@ -15,6 +15,12 @@ The platform ensures **anonymity**, requiring **no KYC** or public identities. I
 **Copyright:** © 2025 Mir Mohmmad Luqman. All Rights Reserved.
 
 ---
+## Our/My Aim:
+
+ - Decentralized Identity & Trust System
+ - Anonymous Legal Company Ownership System
+ - Post-Quantum Cryptography
+---
 
 ## Features
 
