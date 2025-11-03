@@ -1,48 +1,49 @@
 # Prava Custos
 
 ## Overview
-**Prava Custos** is a decentralized application (dApp) that enables users to create and manage private entities (e.g., companies or ownership claims) with provable ownership, prioritizing privacy and simplicity.
 
-Users can:
-- Store encrypted data off-chain using **IPFS**
-- Link that data to an on-chain smart contract
-- Prove ownership using a password or cryptographic key
+Prava Custos is a decentralized application enabling private entity creation and ownership proof using cryptographic validation and off-chain encrypted storage. It prioritizes privacy, anonymity, and secure ownership transfer without relying on KYC or public identity.
 
-The platform ensures **anonymity**, requiring **no KYC** or public identities. It uses **AES encryption** and **keccak256 hashing** for security.
+## Key Features
 
-**Author:** Mir Mohmmad Luqman  
-**Email:** mirmohmmadluqman@gmail.com  
-**Copyright:** © 2025 Mir Mohmmad Luqman. All Rights Reserved.
+* **Private Entity Creation**: Generate unique IDs and encrypted metadata.
+* **Encrypted Storage**: Store entity data on IPFS using AES encryption.
+* **On-Chain Hashing**: Password hash stored on Ethereum smart contract.
+* **Ownership Proof**: Verify ownership through password hashing and decryption.
+* **Secure Transfer**: Update encrypted data and password to transfer ownership.
+* **No KYC / Anonymous**: Full privacy via cryptographic identity.
+* **Post-Quantum Future Ready Goal**: Incorporate PQ cryptography in future upgrades.
 
----
-## Our Aim:
+## Architecture
 
- - Decentralized Identity & Trust System
- - Anonymous Legal Company Ownership System
- - Post-Quantum Cryptography
----
+| Layer             | Function                                                      |
+| ----------------- | ------------------------------------------------------------- |
+| Smart Contract    | Stores entity hash + control logic                            |
+| Off-Chain Storage | IPFS for encrypted entity data                                |
+| Encryption        | AES encryption + keccak256 hashing                            |
+| Frontend          | Minimal UI (HTML/CSS/JS) for entity creation and verification |
 
-## Features
 
-- **Entity Creation**: Create a private entity with a unique ID. Store encrypted data (e.g., company details) on IPFS and password hash on-chain.
-- **Ownership Proof**: Enter password → hash → compare with on-chain → decrypt if correct.
-- **Ownership Transfer**: Change the password and encrypted data to transfer ownership securely.
-- **Privacy Focused**: No personal identity or KYC required. Ownership is proven cryptographically.
+## Workflow
 
----
+1. User enters entity information
+2. Data encrypted with AES
+3. Password hashed (keccak256)
+4. Hash stored on-chain
+5. Encrypted data pushed to IPFS
+6. User verifies ownership via password match and decryption
 
-## Tech Stack
+## Future Goals
 
-- **Smart Contract**: Solidity on Ethereum Sepolia testnet
-- **Off-Chain Storage**: IPFS for encrypted data
-- **Frontend**: HTML, CSS, JavaScript
-- **Libraries**: Web3.js, AES encryption
+* Anonymous and know both legal companies, land and assests ownership infrastructure
+* Post-quantum cryptography integration
+* Decentralized identity network (DID)
 
----
+## License
 
-## Prerequisites
+Apache 2.0 License (open-source compliance)
 
-- **MetaMask**: Browser extension for Ethereum account management and Sepolia access
-- **Sepolia Testnet ETH**: From faucets (e.g., [faucet.sepolia.dev](https://faucet.sepolia.dev))
-- **Node.js**: Optional, for local development
-- **Modern Browser**: Chrome, Firefox, etc., with JavaScript enabled
+## Author
+
+Mir Mohmmad Luqman
+[mirmohmmadluqman@gmail.com](mailto:mirmohmmadluqman@gmail.com)
